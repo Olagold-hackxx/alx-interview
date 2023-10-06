@@ -1,4 +1,9 @@
+#!/usr/bin/python3
+"""Implement lockboxes"""
+
+
 def canUnlockAll(boxes):
+    """Implement lockboxes"""
     unlocked_boxes = {0}
     new_keys = [0]
 
