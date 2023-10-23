@@ -21,11 +21,12 @@ try:
     for input in sys.stdin:
         count += 1
         required_input = input.split(" ")
-        if count % 10 == 0:
+        if count == 10:
             print("File size: {}".format(file_size))
             status_codes.sort()
             print_stdin(status_codes)
             status_codes = []
+            count = 0
         else:
             if len(required_input) < 9:
                 continue
