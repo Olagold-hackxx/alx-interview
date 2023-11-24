@@ -26,3 +26,4 @@ def pascal_triangle(n):
                 pascal[li].append(1)
 
     return pascal
+
