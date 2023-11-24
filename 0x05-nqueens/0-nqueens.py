@@ -1,4 +1,8 @@
+#!/usr/bin/python3
+"""N queens solution finder module.
+"""
 import sys
+
 
 def is_safe(board, row, col):
     # Check if there is a queen in the same column on top
