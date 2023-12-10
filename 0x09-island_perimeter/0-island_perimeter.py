@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 ''' Get Island Perimeter'''
 
+
 def island_perimeter(grid):
     """Get Island Perimeter"""
     horizontal_length = []
@@ -16,7 +17,7 @@ def island_perimeter(grid):
                 vertical_length = 1
             else:
                 vertical_length = vertical_length + 1
-    return 2 * (vertical_length + max(horizontal_length))
+    return 2 * (vertical_length + max(horizontal_length, default=0))
 
 
 def check_island(line, cur_index, h_length):
@@ -33,6 +34,7 @@ def check_island(line, cur_index, h_length):
         else:
             return {'h_length': new_h_length, 'starting_index': new_index}
     return None
+
 
 def count_island_length(line):
     h_length = 0
