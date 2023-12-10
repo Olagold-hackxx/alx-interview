@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+''' Get Island Perimeter'''
 
 def island_perimeter(grid):
+    """Get Island Perimeter"""
     horizontal_length = []
     v_index = 0
     vertical_length = 0
