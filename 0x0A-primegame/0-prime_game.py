@@ -5,7 +5,7 @@ Prime Game
 
 
 def primes(n):
-    """Prime game
+    """ Get prime numbers
     """
     prime = []
     sieve = [True] * (n + 1)
